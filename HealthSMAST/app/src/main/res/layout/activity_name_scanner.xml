@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/wave_background_2"
+    tools:context=".NameScanner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/BackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callMainMenu"
+            android:padding="5dp"
+            android:src="@drawable/back_button" />
+
+        <ImageView
+            android:id="@+id/inputImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputImage"
+            android:text="Detected Text"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:maxLines="5"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/captureImage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Take Picture"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_design"
+                android:textColor="#FA71CD"/>
+
+            <Button
+                android:id="@+id/detectText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Detect Text"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_design"
+                android:textColor="#FA71CD"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Search"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_design"
+                android:textColor="#FA71CD"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

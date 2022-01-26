@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254959607245",
+    "project_id": "healthsmast-12e4e",
+    "storage_bucket": "healthsmast-12e4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254959607245:android:b5fb52375649c575797884",
+        "android_client_info": {
+          "package_name": "com.example.healthsmast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254959607245-tr7a5ia89aaftqn0ggq78ofsi8qt5gom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGLrc8GKtDZVp_xxLkFJdYDdmT0g1qWk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254959607245-tr7a5ia89aaftqn0ggq78ofsi8qt5gom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

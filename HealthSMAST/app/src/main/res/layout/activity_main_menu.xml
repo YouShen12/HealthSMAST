@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="logout"
+            android:text="LOGOUT"
+            android:background="@drawable/button_design"
+            android:textColor="#FA71CD"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/menu_button_design"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/scanSearchName"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/search"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snap and Search"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/scanSearchName"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:onClick="callNameScanner" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/menu_button_design"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/survey"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/survey"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disease Data Collector"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/survey"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:onClick="callContributeDataSubMenu" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/menu_button_design"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/predict"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/predict"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disease Predictor"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/predict"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:onClick="callDiseasePredictor" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/menu_button_design"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/code"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/qrcode"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Medical QR/Barcode"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/code"/>
+
+            <Button
+                android:id="@+id/codeScannerButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:onClick="callCodeScanner" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/menu_button_design"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/profile"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:onClick="callMyProfile" />
+        </RelativeLayout>
+
+
+
+
+"
+    </LinearLayout>
+
+</ScrollView>
